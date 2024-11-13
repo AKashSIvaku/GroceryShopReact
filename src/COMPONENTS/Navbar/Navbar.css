@@ -1,0 +1,160 @@
+/* Navbar container */
+nav {
+  background: linear-gradient(135deg, #2c6e49, #3a6f41); /* Gradient background */
+  color: white;
+  font-family: 'Arial', sans-serif;
+  padding: 15px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Top section of the navbar */
+.navbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ffffff33; /* Semi-transparent white border */
+}
+
+/* Logo styling */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f0e5d8; /* Off-white color for logo */
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.logo span {
+  color: #f76c6c; /* Light coral color for "Store" */
+}
+
+.logo:hover {
+  color: #6cf77a; /* Light coral color on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.searchbar {
+  display: flex;
+  flex: 1;
+  max-width: 600px;
+  margin: 0 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px 0 0 20px; /* Rounded corners */
+  outline: none;
+  font-size: 14px;
+  background-color: #ffffff; /* White background for input */
+  color: #333; /* Dark text color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-button {
+  background-color: #f76c6c; /* Coral color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0 20px 20px 0; /* Rounded corners */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #d9534f; /* Darker coral color on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Cart and Profile section */
+.cart-profile {
+  display: flex;
+  align-items: center;
+}
+
+.cart, .profile {
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.cart:hover, .profile:hover {
+  color: #f76c6c; /* Coral color on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Bottom section of the navbar */
+.navbar-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the category dropdown */
+  padding-top: 10px;
+}
+
+/* Category dropdown styling */
+.category-dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.category-dropdown label {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.category-dropdown select {
+  background-color: #4a6a40; /* Darker green */
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.category-dropdown select:focus {
+  outline: none;
+  background-color: #3a6f41; /* Slightly darker green on focus */
+}
+
+.category-dropdown select option {
+  background-color: #ffffff; /* White background for options */
+  color: #333; /* Dark text color for options */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .searchbar {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .search-input {
+    width: calc(100% - 80px); /* Adjust width for responsiveness */
+  }
+
+  .search-button {
+    width: 80px;
+  }
+
+  .cart-profile {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navbar-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

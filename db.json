@@ -1,0 +1,11 @@
+{
+  "cart": [
+    {
+      "id": 1,
+      "name": "CAKE",
+      "dis": "20%",
+      "add": "/static/media/cake.0ac0e19aed2eceef128c.jpeg",
+      "price": 500
+    }
+  ]
+}
